@@ -1,11 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
+
 }
 
 /* ::-webkit-scrollbar {
@@ -14,15 +15,13 @@ html{
 
 
 
-.body{
-    font-family: 'Archivo', Arial, Helvetica, sans-serif ;
+.body {
+    font-family: 'Archivo', Arial, Helvetica, sans-serif;
     background-color: #201f1e;
     width: 100%;
-    height: 5000px;
-   
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,41 +33,42 @@ html{
     top: 0;
     padding: 0 15%;
     z-index: 100;
+    backdrop-filter: blur(2px);
 }
 
 
-.header__marca{
+.header__marca {
     height: 100%;
     padding: 10px;
 }
 
-.header__img{
+.header__img {
     height: 100%;
 }
 
-.nav__list a{
+.nav__list a {
     color: white;
 }
 
 
-.nav__list{
+.nav__list {
     display: flex;
     gap: 30px;
     list-style: none;
 }
 
-.nav__list__item a{
+.nav__list__item a {
     font-weight: 600;
     text-decoration: none;
     letter-spacing: 1.5px;
 }
 
-.main{
+.main {
     min-width: 100%;
     height: 100%;
 }
 
-.container__inicio{
+.container__inicio {
     /* background-image: url("background.jpg"); */
     background-position: center;
     background-size: cover;
@@ -78,7 +78,7 @@ html{
     top: 0;
 }
 
-.inicio{
+.inicio {
     display: flex;
     height: 100%;
     max-width: 1200px;
@@ -88,7 +88,7 @@ html{
     position: relative;
 }
 
-.inicio__video{
+.inicio__video {
     position: fixed;
     left: 0;
     right: 0;
@@ -98,18 +98,18 @@ html{
     object-fit: cover;
 }
 
-.inicio__textos{
+.inicio__textos {
     order: 2;
     width: 500px;
-   
+
 }
 
-.inicio__titulo{
+.inicio__titulo {
     font-size: 46px;
     font-weight: 600;
 }
 
-.inicio__parrafo{
+.inicio__parrafo {
     font-size: 19px;
     padding: 20px 0 20px 0;
     line-height: 1.5;
@@ -122,7 +122,7 @@ html{
     user-select: none; 
 } */
 
-.inicio__img{
+.inicio__img {
     width: 400px;
     animation: move-img 5s linear infinite;
 }
@@ -137,14 +137,14 @@ html{
     animation: move-flecha 2s ease infinite;
 }
 
-.inicio__flecha a{
-    font-size:58px;
-    color: rgba(206,217,237,1);
+.inicio__flecha a {
+    font-size: 58px;
+    color: rgba(206, 217, 237, 1);
 }
 
-.button{
-    background: rgb(206,217,237);
-    background: linear-gradient(90deg, rgba(206,217,237,1) 0%, rgba(207,199,250,1) 25%, rgba(226,198,238,1) 50%, rgba(239,200,221,1) 75%, rgba(215,233,219,1) 100%);
+.button {
+    background: rgb(206, 217, 237);
+    background: linear-gradient(90deg, rgba(206, 217, 237, 1) 0%, rgba(207, 199, 250, 1) 25%, rgba(226, 198, 238, 1) 50%, rgba(239, 200, 221, 1) 75%, rgba(215, 233, 219, 1) 100%);
     text-decoration: none;
     font-weight: 600;
     color: white;
@@ -155,20 +155,19 @@ html{
     cursor: pointer;
 }
 
-.container__productos{
+.container__productos {
     width: 100%;
     height: 100%;
 }
 
-.productos{
+.productos {
     width: 100%;
     height: 100%;
     background-image: url(media/img/Background.png);
     background-repeat: no-repeat;
-    background-size: c;
 }
 
-.productos__titulo{
+.productos__titulo {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -178,28 +177,29 @@ html{
     padding: 150px 0 0 0;
 }
 
-.productos__texto{
+.productos__texto {
     color: white;
     font-size: 3em;
     font-weight: 500;
 }
 
-.productos__linea{
-    background: rgb(206,217,237);
-    background: linear-gradient(90deg, rgba(206,217,237,1) 0%, rgba(207,199,250,1) 25%, rgba(226,198,238,1) 50%, rgba(239,200,221,1) 75%, rgba(215,233,219,1) 100%);
+.productos__linea {
+    background: rgb(206, 217, 237);
+    background: linear-gradient(90deg, rgba(206, 217, 237, 1) 0%, rgba(207, 199, 250, 1) 25%, rgba(226, 198, 238, 1) 50%, rgba(239, 200, 221, 1) 75%, rgba(215, 233, 219, 1) 100%);
     width: 30%;
     height: 10px;
     border-radius: 20px;
 }
 
-.productos__cards{
+.productos__cards {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 60px;
-    margin: 60px 0  80px 0;
+    margin: 60px 0 80px 0;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,7 +210,7 @@ html{
     background-color: #f8f8f821;
 }
 
-.card__thumbnail{
+.card__thumbnail {
     display: flex;
     justify-content: center;
     width: 350px;
@@ -218,11 +218,11 @@ html{
     border-bottom: 1px solid #f8f8f81d;
 }
 
-.card__img{
+.card__img {
     object-fit: contain;
 }
 
-.card__contenido{
+.card__contenido {
     height: auto;
     display: flex;
     flex-direction: column;
@@ -233,30 +233,30 @@ html{
 }
 
 
-.contenido__texto{
+.contenido__texto {
     color: white;
 }
 
-.contenido__texto--descuento{
+.contenido__texto--descuento {
     font-size: 14px;
 
 }
 
-.contenido__texto--descuento span{
-    text-decoration:line-through;
+.contenido__texto--descuento span {
+    text-decoration: line-through;
     padding-right: 5px;
 }
 
-.contenido__texto--precio{
+.contenido__texto--precio {
     font-size: 26px;
     padding-bottom: 5px;
 }
 
-.contenido__button{
+.contenido__button {
     padding: 10px 20px;
 }
 
-.productos__contador{
+.productos__contador {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -265,14 +265,14 @@ html{
     margin: auto;
 }
 
-.productos__texto--contador{
+.productos__texto--contador {
     font-size: 22px;
     font-style: italic;
     font-weight: 400;
     color: white;
 }
 
-.contador h2{
+.contador h2 {
     font-style: italic;
     font-weight: 400;
     color: white;
@@ -280,31 +280,177 @@ html{
 }
 
 
+.container__contacto {
+    width: 100%;
+    height: 100vh;
+  
+}
 
+/* * ----------------- * */
+/* * CLASES GENERALES * */
+
+.contacto__bloque {
+    width: 500px;
+    height: 630px;
+}
+
+.contacto {
+    width: 100%;
+    height: 100%;
+    background-color: #1B1A19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.bloque_contacto__img {
+    width: 100%;
+    height: 100%;
+}
+
+/* * CLASES GENERALES * */
+/* * ----------------- * */
+
+.contacto__informacion {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.informacion__titulos{
+    color: white;
+    padding-bottom: 70px;
+}
+
+.informacion__titulo{
+    font-size: 2em;
+    padding-bottom: 20px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(180deg, rgba(206, 217, 237, 1) 0%, rgba(207, 199, 250, 1) 25%, rgba(226, 198, 238, 1) 50%, rgba(239, 200, 221, 1) 75%, rgba(215, 233, 219, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.informacion__texto{
+    font-weight: 300;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.informacion__texto--2{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.informacion__datos{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: white;
+}
+
+.datos__titulo{
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.datos__texto{
+    font-size: 18px;
+}
+
+.contacto__thumbnail{
+    height: 200px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    padding: 1px;
+    background: linear-gradient(90deg, rgba(206, 217, 237, 1) 0%, rgba(207, 199, 250, 1) 25%, rgba(226, 198, 238, 1) 50%, rgba(239, 200, 221, 1) 75%, rgba(215, 233, 219, 1) 100%);
+}
+
+.contacto__img{
+    object-fit: cover;
+}
+
+
+
+.contacto__formulario{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__thumbnail{
+    width: 100px;
+    height: 100px;
+    margin: 0px auto 0 auto;
+}
+
+.formulario__input{
+    display: block;
+    width: 100%;
+    background: none;
+    border-bottom: 1px solid rgb(93, 92, 92); /*! Cambiar COLOR A LAS LETRAS*/
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 10px 5px;
+    margin: 60px 0;
+}
+
+.formulario__input--mensaje{
+    height: 50px;
+}
+
+
+.formulario__terminos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    bottom: 0;
+    color: rgb(162, 158, 158); /*! Cambiar */
+    margin: 0 auto;
+}
+
+.formulario__checkbox{
+    margin-right: 10px;
+}
+
+.formulario__button{
+    width: 130px;
+}
 
 
 @keyframes move-img {
-    0%{
+    0% {
         transform: translateY(15px);
     }
-    50%{
+
+    50% {
         transform: translateY(0px);
     }
-    100%{
+
+    100% {
         transform: translateY(15px);
     }
 }
 
 @keyframes move-flecha {
-    0%{
+    0% {
         transform: translateY(15px);
     }
-    50%{
+
+    50% {
         transform: translateY(0px);
     }
-    100%{
+
+    100% {
         transform: translateY(15px);
     }
 }
-
-
