@@ -22,13 +22,27 @@
             <img src="media/img/logo.png" alt="" class="header__img">
         </a>
 
-        <div class="nav">
+        <nav class="navbar">
+
             <ul class="nav__list">
-                <li class="nav__list__item"><a href="#">Inicio</a></li>
-                <li class="nav__list__item"><a href="#Productos">Productos</a></li>
-                <li class="nav__list__item"><a href="#Contacto">Contacto</a></li>
+                <li class="nav__list__item">
+                    <a href="#" class="nav__list__item__a">Inicio</a>
+                </li>
+
+                <li class="nav__list__item">
+                    <a href="#Productos" class="nav__list__item__a">Producto</a>
+                </li>
+
+                <li class="nav__list__item">
+                    <a href="#Contacto" class="nav__list__item__a">Contacto</a>
+                </li>
             </ul>
-        </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
     </header>
 
 
@@ -41,19 +55,19 @@
                 <video src="media/videos/background.mp4" autoplay muted loop plays-inline class="inicio__video"></video>
 
                 <div class="inicio__textos">
-                    <h1 class="inicio__titulo">Thats the tea</h1>
+                    <h1 class="inicio__titulo">encuentrate a ti mismo.</h1>
 
-                    <p class="inicio__parrafo">
+                    <!-- <p class="inicio__parrafo">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis molestiae nisi eveniet non sed
-                        numquam eum sapiente quo nam explicabo expedita, voluptate aperiam odit voluptatem.
-                    </p>
+                        numquam eum eriam odit voluptatem.
+                    </p> -->
 
                     <button class="inicio__button button">SABER MÁS</button>
                 </div>
 
-                <div class="inicio__portada">
-                    <img src="media/img/holographic.png" alt="" class="inicio__img">
-                </div>
+                <!-- <div class="inicio__portada">
+                    <img src="media/img/holo4.png" alt="" class="inicio__img">
+                </div> -->
 
                 <div class="inicio__flecha">
                     <a href="#Productos"><i class="fa-solid fa-angles-down"></i></i></a>
@@ -165,7 +179,7 @@
                         <img src="media/img/logo.png" alt="" class="bloque_contacto__img formulario__img">
                     </div>
 
-                    <form action="" class="formulario">
+                    <form action="" class="formulario" id="formulario">
 
                         <div class="formulario__inputs">
                             <input type=" text" class="formulario__input" placeholder="Nombre">
@@ -176,12 +190,14 @@
                         </div>
 
                         <div class="formulario__terminos">
-                            <label for="" class="formulario__label">
-                                <input type="checkbox" class="formulario__checkbox">
+
+                            
+                            <label for="checkbox" class="formulario__label">
+                                <input type="checkbox" class="formulario__checkbox" id="checkbox">
                                 Acepto el proceso de los datos pesonales
                             </label>
 
-                            <button class="button formulario__button">ENVIAR</button>
+                            <button type="submit" class="button formulario__button" id="formulario">ENVIAR</button>
                         </div>
                     </form>
                 </div>
@@ -220,29 +236,41 @@
 
             <div class="footer__marca">
                 <div class="footer__marca__thumbnail">
-                    <img src="media/img/logo.png" alt="" class="footer__marca__img">
+                    <img src="media/img/logo__footer.png" alt="" class="footer__marca__img">
                 </div>
             </div>
 
             <div class="footer__about">
                 <h2 class="footer__about__titulo">Sobre nosotros</h2>
-                <p class="footer__about__texto">Somos una empresa destinada a la importacion de ropa de marcas internacionales en el Uruguay.</p>
-            </div>  
+                <p class="footer__about__texto">Somos una empresa fundanda en el año 2018 destinada a la importacion de ropa de marcas
+                    internacionales en la republica oriental del Uruguay.</p>
+            </div>
 
         </div>
 
         <div class="footer__sociales">
 
             <div class="footer__redes">
-                <div class="footer__sociales__thumbnail">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </div>
-                <div class="footer__sociales__thumbnail">
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-                <div class="footer__sociales__thumbnail">
-                    <i class="fa-brands fa-twitter"></i>
-                </div>
+                
+                <a href="https://www.facebook.com/MTV/" target="_blank">
+                    <div class="footer__redes__thumbnail">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/mtv/" target="_blank">
+                    <div class="footer__redes__thumbnail">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </a>
+
+                <a href="https://twitter.com/MTV?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+
+                    <div class="footer__redes__thumbnail">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </a>
+
             </div>
 
             <div class="footer__copyright">
@@ -251,19 +279,20 @@
 
             <div class="footer__pago">
                 <div class="footer__pago__thumbnail">
-                    <i class="fa-brands fa-cc-visa"></i>
+                    <img src="media/img/paypal.png" alt="" class="footer__pago__img">
                 </div>
                 <div class="footer__pago__thumbnail">
-                    <i class="fa-brands fa-cc-paypal"></i>
+                    <img src="media/img/mastercard.png" alt="" class="footer__pago__img">
                 </div>
                 <div class="footer__pago__thumbnail">
-                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <img src="media/img/visa.png" alt="" class="footer__pago__img">
                 </div>
             </div>
         </div>
 
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 
 </html>
